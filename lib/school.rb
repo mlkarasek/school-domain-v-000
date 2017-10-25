@@ -16,6 +16,4 @@ def add_student(name, grade)
       student.sort!
     end
   end
-      
-
 end
