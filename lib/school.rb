@@ -1,10 +1,21 @@
-class School
+def add_student(name, grade)
+    if @roster.key?(grade)
+      @roster[grade] << name
+    else
+      @roster[grade] = []
+      @roster[grade] << name
+    end
+  end
 
-attr_accessor :name, :roster
+  def grade(grade)
+    return @roster[grade]
+  end
 
-def initialize(name)
-  @name = name
-  @roster = {}
+  def sort
+    @roster.each do |grade, student|
+      student.sort!
+    end
+  end
+      
 
-end
 end
