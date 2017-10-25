@@ -1,4 +1,14 @@
-def add_student(name, grade)
+class School
+
+  attr_accessor :roster
+  attr_reader :school
+
+  def initialize(school)
+    @school = school
+    @roster = {}
+  end
+
+  def add_student(name, grade)
     if @roster.key?(grade)
       @roster[grade] << name
     else
