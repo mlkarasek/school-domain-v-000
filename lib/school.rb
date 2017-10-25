@@ -1,6 +1,6 @@
 class School
 
-def roster 
+def roster(student) 
   hash[new_key] = []
   hash[new_key] << new_value_for_value_array
 
